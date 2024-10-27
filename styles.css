@@ -9,6 +9,143 @@
     --off-white: #fafafa;  
 }
 
-html {
-    font-family: 'Montserrat', sans-serif;
+* {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+
+.nav-menu {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-menu a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+
+.nav-menu a:hover {
+  background-color: var(--primary-color-dark);
+}
+
+body {
+    background-color: var(--off-white);
+}
+
+.body-main {
+    background-color: white;
+    margin-top: 50px;
+    margin-left: 75px;
+    margin-right: 75px;
+    margin-bottom: 50px;
+    padding-bottom: 200px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+p {
+    font-size: 24px;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+.p-main {
+    padding-top: 75px;
+}
+
+.welcome {
+    font-size: 98px;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 75px;
+}
+
+.start-button {
+    margin-left: 200px;
+    border: 1px solid #6d213c;
+    border-radius: 5px;
+    padding: 5px 10px; 
+}
+
+.start-button:hover {
+    background-color: #6d213c;
+    color: white;
+    transition: background 0.5s;
+    cursor: pointer;
+}
+
+.bg-container {
+    position: relative;
+    min-height: 375px;
+    height: auto;
+    width: auto;
+}
+
+.bg-img {
+    box-sizing: border-box;
+    background-image: url('images/topImage.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    min-height: 375px; 
+    position: relative;
+    z-index: 1;
+}
+
+.bg-txt {
+    position: relative;
+    color: white;
+    font-size: 72px;
+    padding-top: 25px;
+    padding-left: 25px;
+    margin-right: 750px;
+    padding-bottom: 25px;
+    z-index: 2;
+}
+
+.bg-grdnt {
+    background: linear-gradient(90deg, #6d213c, #6d213c00);
+    height: 100%;
+    width: 80%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.main-hd {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 25px;
+    margin-left: 250px;
+    margin-right: 250px;
+    padding-bottom: 25px;
+}
+
+.main-cont-1 {
+    display: inline-block;
+}
+
+.main-cont-2 {
+    display: inline-block;
+}
+
+.main-img {
+    width: 35%;
+    display: flex;
 }
